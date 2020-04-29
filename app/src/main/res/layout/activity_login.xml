@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <include android:id="@+id/toolbar"
+        layout="@layout/bar_layout"
+        tools:ignore="Invalid id"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:layout_below="@id/toolbar">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textColor="#050202"
+            tools:ignore="HardcodedText" />
+
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:layout_marginTop="15dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            app:met_floatingLabel="normal"
+            tools:ignore="HardcodedText" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:layout_marginTop="15dp"
+            android:inputType="textPassword"
+            android:hint="Password"
+            app:met_floatingLabel="normal"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="login"
+            android:textAllCaps="true"
+            android:background="#34ABE1"
+            android:textColor="#ffffff"
+            android:layout_marginTop="30dp"
+            android:textSize="19sp"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/forgot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot your Password?"
+            android:gravity="end"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textColor="#120501"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
